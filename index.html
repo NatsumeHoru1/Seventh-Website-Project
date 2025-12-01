@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Interactive Photo Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Interactive Photo Gallery</h1>
+  <p>Use mouse or keyboard (Tab + Enter) to explore images</p>
+
+  <div class="gallery">
+    <img src="https://picsum.photos/400/300?random=1" alt="Majestic mountains at sunrise" 
+         onmouseover="upDate(this)" onmouseout="unDo()"
+         onfocus="upDate(this)" onblur="unDo()">
+    
+    <img src="https://picsum.photos/400/300?random=2" alt="Calm ocean waves at dusk"
+         onmouseover="upDate(this)" onmouseout="unDo()"
+         onfocus="upDate(this)" onblur="unDo()">
+    
+    <img src="https://picsum.photos/400/300?random=3" alt="Enchanted forest path"
+         onmouseover="upDate(this)" onmouseout="unDo()"
+         onfocus="upDate(this)" onblur="unDo()">
+    
+    <img src="https://picsum.photos/400/300?random=4" alt="Modern city skyline at night"
+         onmouseover="upDate(this)" onmouseout="unDo()"
+         onfocus="upDate(this)" onblur="unDo()">
+    
+    <img src="https://picsum.photos/400/300?random=5" alt="Golden desert dunes"
+         onmouseover="upDate(this)" onmouseout="unDo()"
+         onfocus="upDate(this)" onblur="unDo()">
+    
+    <img src="https://picsum.photos/400/300?random=6" alt="Cherry blossoms in spring"
+         onmouseover="upDate(this)" onmouseout="unDo()"
+         onfocus="upDate(this)" onblur="unDo()">
+  </div>
+
+  <div id="image"></div>
+  <div id="imageText">Hover or focus on an image above to display here.</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
